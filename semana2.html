@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        .infografia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #1E1E2F, #3A3A5D);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .info-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #FFD700;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <img src="imagenes/logo.png" alt="Logo">
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="presentacion.html">Presentación</a></li>
                 <li><a href="semana1.html">Semana 1</a></li>
@@ -20,29 +43,27 @@
             </ul>
         </nav>
     </header>
-
-    <section class="contenido">
-        <h2>Semana 2</h2>
-        <div class="contenedor-cuadros">
-            <div class="cuadro">
-                <h3>Computación en la Nube</h3>
-                <p>La computación en la nube permite el acceso remoto a recursos informáticos como servidores, almacenamiento y bases de datos a través de internet.</p>
-                <p>Ejemplos de servicios en la nube incluyen <strong>Google Drive</strong>, <strong>Dropbox</strong> y <strong>Amazon Web Services (AWS)</strong>.</p>
-                <img src="imagenes/nube.jpg" alt="Computación en la Nube">
+    <main>
+        <h1>Semana 2</h1>
+        <div class="infografia">
+            <div class="info-box">
+                <h2>Computación en la Nube</h2>
+                <p>La computación en la nube permite el acceso a recursos informáticos a través de Internet, eliminando la necesidad de infraestructura física costosa.</p>
+                <p>Se basa en la virtualización y en la capacidad de escalar servicios según la demanda. Ejemplos populares incluyen <b>Google Drive, Dropbox y Amazon Web Services (AWS)</b>.</p>
+                <img src="img/computacion_nube.jpg" alt="Computación en la Nube">
             </div>
-            <div class="cuadro">
-                <h3>Modelos de Despliegue</h3>
-                <p>Los modelos de despliegue en la nube se dividen en:</p>
+            <div class="info-box">
+                <h2>Modelos de Despliegue</h2>
+                <p>Los modelos de despliegue en la nube definen cómo se gestionan y distribuyen los recursos de TI.</p>
                 <ul>
-                    <li><strong>Nube Pública:</strong> Infraestructura compartida entre múltiples usuarios.</li>
-                    <li><strong>Nube Privada:</strong> Infraestructura dedicada a una sola organización.</li>
-                    <li><strong>Nube Híbrida:</strong> Combinación de nube pública y privada.</li>
-                    <li><strong>Nube Comunitaria:</strong> Compartida por organizaciones con intereses comunes.</li>
+                    <li><b>Nube Pública:</b> Infraestructura compartida entre múltiples usuarios (Ejemplo: Google Cloud, AWS).</li>
+                    <li><b>Nube Privada:</b> Infraestructura utilizada exclusivamente por una organización.</li>
+                    <li><b>Nube Híbrida:</b> Combinación de nube pública y privada para mayor flexibilidad.</li>
+                    <li><b>Nube Comunitaria:</b> Infraestructura compartida entre varias organizaciones con objetivos similares.</li>
                 </ul>
-                <img src="imagenes/despliegue.jpg" alt="Modelos de Despliegue en la Nube">
+                <img src="img/modelos_despliegue.jpg" alt="Modelos de Despliegue en la Nube">
             </div>
         </div>
-    </section>
-
+    </main>
 </body>
 </html>

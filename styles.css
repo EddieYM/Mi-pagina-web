@@ -85,3 +85,43 @@ nav ul li a {
 .info-text {
     font-size: 14px;
 }
+.contenido {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contenedor-cuadros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cuadro {
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cuadro:hover {
+    transform: scale(1.05);
+}
+
+.cuadro h3 {
+    color: #ffcc00;
+}
+
+.cuadro p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cuadro img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}

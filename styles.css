@@ -51,9 +51,11 @@ nav ul li a {
 
 /* Estilos para la infografía */
 .infografia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Asegura alineación vertical si es necesario */
+    gap: 20px; /* Espacio entre los cuadros */
+    flex-wrap: wrap; /* Permite que los cuadros se acomoden en pantallas pequeñas */
     padding: 20px;
     max-width: 1200px;
     margin: auto;

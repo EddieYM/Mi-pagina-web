@@ -3,30 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana 2</title>
+    <title>Semana 2: Computación en la Nube y Modelos de Despliegue</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list">
+        <div class="logo-container">
+            <img src="tu-logo.png" alt="Logo" class="logo">
+            <span class="nombre">Tu Nombre</span>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="menu">
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="presentacion.html">Mi Presentación</a></li>
                 <li><a href="semana1.html">Semana 1</a></li>
                 <li><a href="semana2.html">Semana 2</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <!-- Agrega más enlaces según sea necesario -->
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Semana 2</h1>
-        <p>Contenido de la segunda semana del curso.</p>
+        <section>
+            <h1>Semana 2: Computación en la Nube y Modelos de Despliegue</h1>
+            <article>
+                <h2>Computación en la Nube</h2>
+                <p>
+                    La <strong>computación en la nube</strong> es la distribución de recursos de TI bajo demanda a través de Internet mediante un esquema de pago por uso. En lugar de comprar, poseer y mantener servidores y centros de datos físicos, puedes acceder a servicios tecnológicos, como capacidad informática, almacenamiento y bases de datos, según tus necesidades a través de un proveedor de la nube como Amazon Web Services (AWS). :contentReference[oaicite:0]{index=0}
+                </p>
+                <p>
+                    Algunas características clave de la computación en la nube incluyen:
+                </p>
+                <ul>
+                    <li><strong>Autoservicio bajo demanda:</strong> Los usuarios pueden aprovisionar recursos de manera automática sin necesidad de interacción humana con el proveedor de servicios.</li>
+                    <li><strong>Acceso amplio a la red:</strong> Los recursos están disponibles a través de la red y se accede a ellos mediante mecanismos estándar que promueven el uso por plataformas heterogéneas (por ejemplo, teléfonos móviles, tabletas, computadoras portátiles).</li>
+                    <li><strong>Ubicación transparente y agrupación de recursos:</strong> Los recursos informáticos del proveedor se agrupan para servir a múltiples consumidores, con diferentes recursos físicos virtualizados que se asignan y reasignan dinámicamente según la demanda.</li>
+                    <li><strong>Rápida elasticidad:</strong> Las capacidades pueden aprovisionarse y liberarse rápidamente, permitiendo una escalabilidad rápida acorde a la demanda.</li>
+                    <li><strong>Servicio medido:</strong> Los sistemas en la nube controlan y optimizan automáticamente el uso de los recursos, proporcionando transparencia tanto para el proveedor como para el consumidor del servicio utilizado. :contentReference[oaicite:1]{index=1}</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Modelos de Despliegue en la Nube</h2>
+                <p>
+                    Existen varios modelos de despliegue en la nube, cada uno con características y beneficios específicos:
+                </p>
+                <ul>
+                    <li><strong>Nube Pública:</strong> Los servicios se ofrecen a través de una red abierta para uso público. Los recursos son propiedad de un proveedor de servicios en la nube que los gestiona y los ofrece a múltiples clientes. Este modelo es ideal para organizaciones que necesitan gestionar cargas de trabajo fluctuantes y crecientes. :contentReference[oaicite:2]{index=2}</li>
+                    <li><strong>Nube Privada:</strong> Los servicios y la infraestructura se mantienen en una red privada, ya sea en las instalaciones o en un proveedor externo. Ofrece mayor control y seguridad, siendo adecuada para organizaciones con requisitos estrictos de seguridad y cumplimiento. :contentReference[oaicite:3]{index=3}</li>
+                    <li><strong>Nube Híbrida:</strong> Combina nubes públicas y privadas, permitiendo que los datos y aplicaciones se compartan entre ellas. Este modelo ofrece mayor flexibilidad y opciones de despliegue optimizadas, permitiendo a las organizaciones aprovechar los beneficios de ambos entornos. :contentReference[oaicite:4]{index=4}</li>
+                </ul>
+            </article>
+        </section>
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

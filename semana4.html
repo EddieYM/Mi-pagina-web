@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación</title>
+    <title>Semana 4</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
@@ -77,6 +77,28 @@
         h1 {
             font-size: 2.5em;
         }
+        .infografia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #1E1E2F, #3A3A5D);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .info-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #FFD700;
+        }
     </style>
 </head>
 <body>
@@ -124,11 +146,37 @@
         </nav>
     </header>
     <main>
-        <h1>Presentación</h1>
-        <p><strong>Docente:</strong> Dr. Magno Teófilo Baldeón Tovar</p>
-        <p><strong>Estudiante:</strong> Miranda Medina Eddie Yael</p>
-        <p><strong>Semestre:</strong> VII Ciclo</p>
-        <p><strong>Año:</strong> 2025</p>
+        <h1>Semana 4</h1>
+        <div class="infografia">
+            <div class="info-box">
+                <h2>Infraestructura de TI</h2>
+                <p>Es el conjunto de componentes tecnológicos necesarios para operar y gestionar entornos empresariales de TI.</p>
+                <p>Incluye hardware, software, redes, centros de datos y servicios en la nube.</p>
+                <img src="img/infraestructura_ti.jpg" alt="Infraestructura de TI">
+            </div>
+            <div class="info-box">
+                <h2>Modelos de Despliegue</h2>
+                <p>Los modelos comunes de infraestructura incluyen:</p>
+                <ul>
+                    <li>On-Premise: Infraestructura local, todo se gestiona y aloja en la empresa.</li>
+                    <li>Nube Pública: Servicios ofrecidos por terceros (como AWS, Azure) a través de internet.</li>
+                    <li>Nube Privada: Infraestructura en la nube solo para una empresa, más control y seguridad.</li>
+                    <li>Nube Híbrida: Combinación de nube pública, privada y/o on-premise para mayor flexibilidad.</li>
+                </ul>
+                <img src="img/modelos_infra.jpg" alt="Modelos de Despliegue">
+            </div>
+            <div class="info-box">
+                <h2>Componentes y Tipos</h2>
+                <p>Los componentes principales de TI son:</p>
+                <ul>
+                    <li>Servidores: Computadoras potentes que procesan datos y aplicaciones.</li>
+                    <li>Almacenamiento: Discos duros o sistemas para guardar datos.</li>
+                    <li>Redes: Conectan equipos y permiten la comunicación (cables, switches, routers).</li>
+                    <li>Software de gestión: Programas que controlan, monitorean y administran la infraestructura (como herramientas para redes, seguridad, backups, etc.).</li>
+                </ul>
+                
+            </div>
+        </div>
     </main>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación</title>
+    <title>Semana 3</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
@@ -77,6 +77,28 @@
         h1 {
             font-size: 2.5em;
         }
+        .infografia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #1E1E2F, #3A3A5D);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .info-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #FFD700;
+        }
     </style>
 </head>
 <body>
@@ -124,11 +146,31 @@
         </nav>
     </header>
     <main>
-        <h1>Presentación</h1>
-        <p><strong>Docente:</strong> Dr. Magno Teófilo Baldeón Tovar</p>
-        <p><strong>Estudiante:</strong> Miranda Medina Eddie Yael</p>
-        <p><strong>Semestre:</strong> VII Ciclo</p>
-        <p><strong>Año:</strong> 2025</p>
+        <h1>Semana 3</h1>
+        <div class="infografia">
+            <div class="info-box">
+                <h2>Administración en la Nube</h2>
+                <p>La administración en la nube implica gestionar recursos y servicios disponibles en plataformas cloud como AWS, Azure o Google Cloud.</p>
+                <p>Permite supervisar, configurar, escalar y asegurar servicios virtualizados desde una consola centralizada.</p>
+                <img src="img/admin_nube.jpg" alt="Administración en la Nube">
+            </div>
+            <div class="info-box">
+                <h2>Funciones</h2>
+                <p>Las funciones en la nube incluyen:</p>
+                <ul>
+                    <txt>Monitoreo del rendimiento</txt>
+                    <txt>Gestión de recursos virtuales</txt> </li>
+                    <txt>Control de acceso y seguridad</txt></li>
+                    <txt>Automatización de tareas</txt></li>
+                </ul>
+                <img src="img/funciones_nube.jpg" alt="Funciones en la Nube">
+            </div>
+            <div class="info-box">
+                <h2>Tecnología</h2>
+                <p>Las tecnologías clave incluyen la virtualización, redes definidas por software (SDN), contenedores como Docker y Kubernetes, y servicios serverless.</p>
+                <img src="img/tecnologia_nube.jpg" alt="Tecnología en la Nube">
+            </div>
+        </div>
     </main>
 </body>
 </html>

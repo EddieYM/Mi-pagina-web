@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación</title>
+    <title>Semana 5</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
@@ -77,6 +77,28 @@
         h1 {
             font-size: 2.5em;
         }
+        .infografia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #1E1E2F, #3A3A5D);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .info-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #FFD700;
+        }
     </style>
 </head>
 <body>
@@ -124,11 +146,27 @@
         </nav>
     </header>
     <main>
-        <h1>Presentación</h1>
-        <p><strong>Docente:</strong> Dr. Magno Teófilo Baldeón Tovar</p>
-        <p><strong>Estudiante:</strong> Miranda Medina Eddie Yael</p>
-        <p><strong>Semestre:</strong> VII Ciclo</p>
-        <p><strong>Año:</strong> 2025</p>
+        <h1>Semana 5</h1>
+        <div class="infografia">
+            <div class="info-box">
+                <h2>Sistemas de Información en los Negocios</h2>
+                <p>Estos sistemas permiten procesar, almacenar y distribuir información para apoyar la toma de decisiones y operaciones empresariales.</p>
+                <p>Ejemplos: ERP, CRM, SCM.</p>
+                <img src="img/sistemas_negocio.jpg" alt="Sistemas de Información">
+            </div>
+            <div class="info-box">
+                <h2>Fundamentos de Inteligencia de Negocios</h2>
+                <p>La inteligencia de negocios (BI) convierte datos en conocimiento útil mediante análisis, informes y dashboards.</p>
+                <p>Ayuda a detectar oportunidades, tendencias y tomar mejores decisiones.</p>
+                <img src="img/bi_fundamentos.jpg" alt="Inteligencia de Negocios">
+            </div>
+            <div class="info-box">
+                <h2>Bases de Datos y Gestión de Información</h2>
+                <p>Las bases de datos almacenan y organizan información que es utilizada por sistemas de BI para el análisis.</p>
+                <p>La gestión eficiente de la información es clave para el éxito empresarial.</p>
+                <img src="img/bd_info.jpg" alt="Bases de datos">
+            </div>
+        </div>
     </main>
 </body>
 </html>
